@@ -19,7 +19,7 @@ const EditProfile = () => {
     <View className="flex-1 bg-primary-200">
       <View className="flex flex-row mt-5 ml-5">
         <MaterialCommunityIcons name="arrow-left" size={30} color="white" onPress={() => navigation.goBack()}/>
-        <Text className="text-white text-xl ml-5">Edit Profile</Text>
+        <Text className="text-white text-2xl font-bold ml-5">Edit Profile</Text>
       </View>
       <TextInput placeholder="First" className="bg-primary-300 rounded-xl mt-5 ml-5 mr-5 p-3 pl-4" placeholderTextColor="white"/>
       <TextInput placeholder="Last" className="bg-primary-300 rounded-xl mt-5 ml-5 mr-5 p-3 pl-4" placeholderTextColor="white"/>

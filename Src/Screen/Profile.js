@@ -8,7 +8,7 @@ const Stack = createStackNavigator()
 import ProfileScreen from './Profile/ProfileScreen'
 import EditProfile from './Profile/EditProfile'
 import Notifications from './Profile/Notifications'
-import Help from './Profile/Help'
+import Security from './Profile/Security'
 
 const Profile = () => {
   return (
@@ -16,7 +16,7 @@ const Profile = () => {
       <Stack.Screen name="ProfileScreen" component={ProfileScreen}/>
       <Stack.Screen name="EditProfile" component={EditProfile}/>
       <Stack.Screen name="Notifications" component={Notifications}/>
-      <Stack.Screen name="Help" component={Help}/>
+      <Stack.Screen name="Security" component={Security}/>
     </Stack.Navigator>
   )
 }
