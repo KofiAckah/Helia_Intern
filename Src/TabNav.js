@@ -38,11 +38,14 @@ function TabNav() {
         },
       })}
       tabBarOptions={{
-        activeTintColor: 'green',
-        inactiveTintColor: 'red',
-        labelStyle: { paddingBottom: 7, fontSize: 10, fontWeight: 'bold',backgroundColor: '#181A20' },
-        style: { padding: 10, height: 70, flex: 1, backgroundColor: '#181A20'},
-        tabBarShowLabel: false,
+        activeTintColor: '#1AB65C',
+        inactiveTintColor: 'gray',
+        labelStyle: {
+          fontSize: 12,
+        },
+        activeBackgroundColor: '#181A20',
+        inactiveBackgroundColor: '#181A20',
+        height: 100,
       }}
       >
         <Tab.Screen name="Home" component={Home}/>

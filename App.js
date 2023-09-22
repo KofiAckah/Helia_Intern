@@ -16,7 +16,7 @@ export default App
 const styles = StyleSheet.create({
   container: { 
     flex: 1,
-    backgroundColor: 'transparent',
+    backgroundColor: '#1AB65C',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   }
 })

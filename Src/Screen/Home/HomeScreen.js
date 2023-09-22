@@ -9,13 +9,16 @@ import Menu from './Menu'
 import BigCard from './BigCard';
 import SmallCard from './SmallCard';
 
+// Database
+import { BigCardInfo } from '../../Details/BigCardInfo';
+
 const HomeScreen = () => {
   return (
     <View className="flex-1 bg-primary-200">
       <ScrollView>
         <View className="flex-row items-center justify-between mt-5">
           <View className="items-center flex-row ml-5">
-            <Image source={require('../../../assets/icon.png')} className="w-10 h-10"/>
+            <Image source={require('../../../assets/logo.png')} className="w-10 h-10 rounded-xl"/>
             <Text className="text-2xl font-bold text-white ml-3">Helia</Text>
           </View>
           <View className="flex-row items-center mr-5">
@@ -33,9 +36,11 @@ const HomeScreen = () => {
           <Menu title="All"/>
         </ScrollView>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <BigCard/>
-          <BigCard/>
-          <BigCard/>
+          <BigCard imageSource={BigCardInfo[0].imageSource} rating={BigCardInfo[0].rating} name={BigCardInfo[0].name} location={BigCardInfo[0].location} price={BigCardInfo[0].price}/>
+          <BigCard imageSource={BigCardInfo[1].imageSource} rating={BigCardInfo[1].rating} name={BigCardInfo[1].name} location={BigCardInfo[1].location} price={BigCardInfo[1].price}/>
+          <BigCard imageSource={BigCardInfo[0].imageSource} rating={BigCardInfo[0].rating} name={BigCardInfo[0].name} location={BigCardInfo[0].location} price={BigCardInfo[0].price}/>
+          <BigCard imageSource={BigCardInfo[0].imageSource} rating={BigCardInfo[0].rating} name={BigCardInfo[0].name} location={BigCardInfo[0].location} price={BigCardInfo[0].price}/>
+          <BigCard imageSource={BigCardInfo[0].imageSource} rating={BigCardInfo[0].rating} name={BigCardInfo[0].name} location={BigCardInfo[0].location} price={BigCardInfo[0].price}/>
         </ScrollView>
         <View className="flex-row justify-between mx-4">
           <Text className="text-white font-bold text-lg">Recently Booked</Text>
