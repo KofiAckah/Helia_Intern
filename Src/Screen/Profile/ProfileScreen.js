@@ -18,7 +18,7 @@ const ProfileScreen = () => {
             <Text className="text-2xl font-bold text-white ml-3">Profile</Text>
           </View>
           <View className="flex-row items-center mr-5">
-            <MaterialCommunityIcons name="bookmark-minus-outline" size={30} color="white"/>
+            <MaterialCommunityIcons name="dots-horizontal-circle-outline" size={30} color="white"/>
           </View>
         </View>
         <View>
